@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Logo } from 'components/base/SVG';
-import Text from 'components/base/Text';
 import { useTheme } from 'utils/Theme';
 
 import { HeaderProps } from './Header.props';

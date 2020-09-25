@@ -1,5 +1,6 @@
 {
-  "name": "react-boilerplate",
+  "name": "jerameel.github.io",
+  "homepage": "http://jerameel.github.io/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -49,6 +50,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "gh-pages": "^3.1.0",
     "plop": "^2.7.3",
     "prettier": "^2.0.5",
     "typescript": "~3.7.2"
@@ -61,7 +63,9 @@
     "generate": "plop",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "add-domain": "echo \"jerameeldelosreyes.com\" > build/CNAME"
+    "add-domain": "echo \"jerameeldelosreyes.com\" > build/CNAME",
+    "predeploy": "npm run build && npm run add-domain",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

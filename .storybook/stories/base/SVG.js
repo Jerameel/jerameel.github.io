@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 
 import {
   /* PLOP_INJECT_IMPORT */
+  Github,
   Logo,
   Close,
   Location,
@@ -76,6 +77,9 @@ storiesOf('base/SVG', module).add('Summary', () => {
     <Container background="white">
       <Content>
         {/* PLOP_INJECT_INSTANCE*/}
+        <Wrapper label="Github">
+          <Github width={30} height={30} />
+        </Wrapper>
         <Wrapper label="Logo">
           <Logo width={30} height={30} />
         </Wrapper>

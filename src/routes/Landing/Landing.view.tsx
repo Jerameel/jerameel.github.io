@@ -1,10 +1,9 @@
 import React from 'react';
 
 import Button from 'components/base/Button';
-import { Logo } from 'components/base/SVG';
+import { Logo, Github } from 'components/base/SVG';
 import Text from 'components/base/Text';
 import Header from 'components/module/Header';
-import MediaQuery from 'react-responsive';
 import { useTheme } from 'utils/Theme';
 
 import { LandingGeneratedProps } from './Landing.props';
@@ -29,6 +28,7 @@ const LandingView = (props: LandingGeneratedProps) => {
           <div className="button-container">
             <Button
               text="View Github"
+              icon={<Github fill="#fff" height={21} width={21} />}
               onClick={() =>
                 window.location.replace('https://github.com/jerameel')
               }

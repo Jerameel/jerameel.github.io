@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { ThemeProvider } from 'emotion-theming';
 import ReactDOM from 'react-dom';
 import { Provider as ReduxProvider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import Routes from 'routes';
 import { store, persistor, sagaMiddleware } from 'store';
@@ -20,9 +20,8 @@ import * as serviceWorker from './serviceWorker';
 sagaMiddleware.run(sagas);
 
 const App = () => {
-  const [rehydrated, setRehydrated] = useState(false);
   const onRehydate = async () => {
-    setRehydrated(true);
+    // Do something after loading state
   };
   return (
     <React.StrictMode>

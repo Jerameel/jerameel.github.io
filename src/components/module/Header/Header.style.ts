@@ -22,4 +22,12 @@ export const Content = styled.div`
   @media (min-width: 401px) and (max-width: 700px) {
     max-width: 400px;
   }
+
+  .logo-container {
+    width: 48px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;

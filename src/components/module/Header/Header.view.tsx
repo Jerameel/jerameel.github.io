@@ -11,7 +11,9 @@ const Header = (props: HeaderProps): JSX.Element => {
   return (
     <Container>
       <Content>
-        <Logo width={'auto'} height={30} fill={theme.neutral.shade1} />
+        <div className="logo-container">
+          <Logo width={'auto'} height={30} fill={theme.neutral.shade1} />
+        </div>
       </Content>
     </Container>
   );

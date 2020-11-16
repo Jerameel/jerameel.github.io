@@ -5,7 +5,7 @@ import Text from '../Text';
 import { Variants } from './Button.props';
 
 const backgroundColor: Record<Variants, string> = {
-  default: theme.brand.primary,
+  default: theme.neutral.shade13,
   disabled: theme.neutral.shade6,
   success: theme.brand.success,
 };
@@ -42,7 +42,7 @@ export const ButtonContainer = styled.button`
     outline: none;
   }
 
-  background: linear-gradient(to right, #002329, #002329);
+  background: linear-gradient(to right, #262626, #262626);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s 0s;

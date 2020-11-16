@@ -9,18 +9,19 @@ const styles: Record<Variants, string> = {
         line-height: 40px;
     `,
   subtitle: `
-        font-size: ${pxToRem(24)};
-    `,
-  body: `
         font-size: ${pxToRem(18)};
     `,
-  label: `
+  body: `
         font-size: ${pxToRem(14)};
-        letter-spacing: 10%;
+    `,
+  label: `
+        font-size: ${pxToRem(12)};
+        letter-spacing: 2.5px;
         text-transform: uppercase;
     `,
   caption: `
-        font-size: ${pxToRem(14)};
+        font-size: ${pxToRem(12)};
+        letter-spacing: 2.5px;
         
     `,
 };

@@ -1,6 +1,8 @@
 import styled from 'utils/styled';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  background-color: ${({ theme }) => theme.neutral.shade1};
+`;
 
 export const Content = styled.div`
   display: flex;

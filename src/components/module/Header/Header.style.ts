@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
-  background-color: ${({ theme }) => theme.brand.secondary};
+  background-color: ${({ theme }) => theme.brand.primary};
 `;
 
 export const Content = styled.div`
@@ -25,7 +25,7 @@ export const Content = styled.div`
 
   .logo-container {
     width: 48px;
-    height: 30px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;

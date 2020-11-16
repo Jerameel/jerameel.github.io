@@ -8,8 +8,8 @@ export const pxToRem = (n: number): string => `${n / rootFontSizePx}rem`;
 
 export const theme: Theme = {
   brand: {
-    primary: '#722ed1',
-    secondary: '#002329',
+    primary: '#1a1a1a',
+    secondary: '#fff',
     info: '#1890ff',
     success: '#52C41A',
     warning: '#faad14',

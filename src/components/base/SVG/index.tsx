@@ -1,4 +1,5 @@
 /* PLOP_INJECT_IMPORT */
+export { default as Medium } from './Medium';
 export { default as Github } from './Github';
 export { default as Logo } from './Logo';
 export { default as Close } from './Close';

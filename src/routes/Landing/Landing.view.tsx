@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'components/base/Button';
-import { Logo, Github } from 'components/base/SVG';
+import { Logo, Github, Medium } from 'components/base/SVG';
 import Text from 'components/base/Text';
 import Header from 'components/module/Header';
 import { useTheme } from 'utils/Theme';
@@ -25,14 +25,25 @@ const LandingView = (props: LandingGeneratedProps) => {
               An Electronics&nbsp;Engineer and Software&nbsp;Developer
             </Text>
           </div>
-          <div className="button-container">
-            <Button
-              text="View Github"
-              icon={<Github fill="#fff" height={21} width={21} />}
-              onClick={() =>
-                window.location.replace('https://github.com/jerameel')
-              }
-            />
+          <div className="buttons">
+            <div className="button-container">
+              <Button
+                text="Github"
+                icon={<Github fill="#fff" height={32} width={32} />}
+                onClick={() =>
+                  window.open('https://github.com/jerameel', '_self')
+                }
+              />
+            </div>
+            <div className="other-button-container">
+              <Button
+                text="Medium"
+                icon={<Medium fill="#fff" height={32} width={32} />}
+                onClick={() =>
+                  window.open('https://jerameel.medium.com', '_self')
+                }
+              />
+            </div>
           </div>
         </Banner>
       </Content>

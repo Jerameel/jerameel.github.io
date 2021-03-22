@@ -41,7 +41,14 @@ export const Banner = styled.div`
     }
   }
 
-  .button-container {
+  .buttons {
     margin-top: 64px;
+  }
+
+  .button-container {
+  }
+
+  .other-button-container {
+    margin-top: 8px;
   }
 `;
